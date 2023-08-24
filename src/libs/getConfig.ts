@@ -49,9 +49,6 @@ export const getConfig = () => {
 
   config.unit = config.unit || defaultConfig.unit;
 
-  config.can_import_react =
-    config.can_import_react || defaultConfig.can_import_react;
-
   cacheConfig = config;
 
   return config;
