@@ -2,7 +2,7 @@
 
 用纯 JS 把 iconfont.cn 的图标转换成 React 组件，不依赖字体，支持多色彩
 
-![](https://github.com/fwh1990/react-iconfont-cli/blob/master/images/icons.png?raw=true)
+![](https://github.com/Simoon-F/react-iconfont-cli/blob/master/images/icons.png?raw=true)
 
 ## 特性
 
@@ -18,10 +18,10 @@
 
 ```bash
 # Yarn
-yarn add react-iconfont-cli --dev
+yarn add @sj-distributor/react-iconfont-cli --dev
 
 # Npm
-npm install react-iconfont-cli --save-dev
+npm install @sj-distributor/react-iconfont-cli --save-dev
 ```
 
 # Step 2
@@ -29,7 +29,7 @@ npm install react-iconfont-cli --save-dev
 生成配置文件
 
 ```bash
-npx iconfont-init
+npx sj-iconfont-init
 ```
 
 此时项目根目录会生成一个`iconfont.json`的文件，内容如下：
@@ -54,7 +54,7 @@ npx iconfont-init
 
 <br />
 
-![](https://github.com/fwh1990/react-iconfont-cli/blob/master/images/symbol-url.png?raw=true)
+![](https://github.com/Simoon-F/react-iconfont-cli/blob/master/images/symbol-url.png?raw=true)
 
 ### use_typescript
 
@@ -89,7 +89,7 @@ npx iconfont-init
 开始生成 React 标准组件
 
 ```bash
-npx iconfont-h5
+npx sj-iconfont-h5
 ```
 
 生成后查看您设置的保存目录中是否含有所有的图标，你可以参考[snapshots 目录](https://github.com/iconfont-cli/react-iconfont-cli/tree/master/snapshots)的快照文件，以区分不同模式下的图标结构。
@@ -139,7 +139,7 @@ export const App = () => {
 <IconFont name="alipay" size={20} />
 ```
 
-![](https://github.com/fwh1990/react-iconfont-cli/blob/master/images/default-color-icon.png?raw=true)
+![](https://github.com/Simoon-F/react-iconfont-cli/blob/master/images/default-color-icon.png?raw=true)
 
 ### 图标单色
 
@@ -151,7 +151,7 @@ export const App = () => {
 <IconFont name="alipay" color="green" />
 ```
 
-![](https://github.com/fwh1990/react-iconfont-cli/blob/master/images/one-color-icon.png?raw=true)
+![](https://github.com/Simoon-F/react-iconfont-cli/blob/master/images/one-color-icon.png?raw=true)
 
 ### 图标多色彩
 
@@ -163,7 +163,7 @@ export const App = () => {
 
 颜色组的数量以及排序，需要根据当前图标的信息来确定。您需要进入图标组件中查看并得出结论。
 
-![](https://github.com/fwh1990/react-iconfont-cli/blob/master/images/multi-color-icon.png?raw=true)
+![](https://github.com/Simoon-F/react-iconfont-cli/blob/master/images/multi-color-icon.png?raw=true)
 
 ### 与文字并排
 
@@ -182,7 +182,7 @@ export const App = () => {
 
 ```bash
 # 修改 symbol_url 配置后执行：
-npx iconfont-h5
+npx sj-iconfont-h5
 ```
 
 # 扩展
