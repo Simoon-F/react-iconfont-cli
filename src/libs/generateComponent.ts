@@ -100,6 +100,7 @@ export const generateComponent = (data: XmlData, config: Config) => {
   iconFile = replaceCases(iconFile, cases);
   iconFile = replaceImports(iconFile, imports);
   iconFile = replaceExports(iconFile, imports);
+  iconFile = replaceReactName(iconFile, config.can_import_react);
 
   if (config.use_typescript) {
     iconFile = replaceNames(iconFile, names);
