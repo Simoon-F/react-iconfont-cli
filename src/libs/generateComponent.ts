@@ -4,7 +4,6 @@ import mkdirp from "mkdirp";
 import glob from "glob";
 import colors from "colors";
 import { camelCase, upperFirst } from "lodash";
-import { XmlData } from "iconfont-parser";
 import { Config } from "./getConfig";
 import { getTemplate } from "./getTemplate";
 import {
@@ -21,6 +20,7 @@ import {
 } from "./replace";
 import { whitespace } from "./whitespace";
 import { copyTemplate } from "./copyTemplate";
+import type { XmlData } from '../commands/types';
 
 const ATTRIBUTE_FILL_MAP = ["path"];
 
