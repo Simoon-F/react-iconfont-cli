@@ -26,8 +26,10 @@ const fetchXmlAndGenerateComponent = async (url: string): Promise<void> => {
     });
 
     generateComponent(result, config);
-  } catch (e: any) {
-    console.error(colors.red(e?.message || 'Unknown Error'));
+  } catch (e: unknown) {
+    const errorText = e instanceof Error ? e.message : 'Unknown Error';
+
+    console.error(colors.red(errorText));
 
     process.exit(1);
   }
