@@ -1,3 +1,5 @@
+> 这个存储库是 原始存储库名称 [react-iconfont-cli](https://github.com/iconfont-cli/react-iconfont-cli) 的一个分支，它已经有一段时间没有被积极维护。我们已经决定接管这个项目的维护，以保持它的活力和改善它的功能。我们致力于引入新特性、修复现有问题，并与社区紧密合作，确保这个库能够满足开发者的需求。
+
 ## react-iconfont-cli
 
 用纯 JS 把 iconfont.cn 的图标转换成 React 组件，不依赖字体，支持多色彩
